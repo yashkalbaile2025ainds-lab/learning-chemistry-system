@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="glass section-box">
+    <div class="section-header">
+        <h2>Reaction Checker</h2>
+        <p>Test some predefined reactions</p>
+    </div>
+
+    <div class="reaction-grid">
+        <input type="text" id="reactant1" class="input" placeholder="Reactant 1, e.g. HCl">
+        <input type="text" id="reactant2" class="input" placeholder="Reactant 2, e.g. NaOH">
+    </div>
+
+    <button class="btn primary full" onclick="checkReaction()">Check Reaction</button>
+
+    <div class="result-box" id="reactionResult">
+        <p>Reaction output will appear here.</p>
+    </div>
+
+    <div class="glass examples">
+        <h3>Examples</h3>
+        <p>H2 + O2</p>
+        <p>Na + Cl2</p>
+        <p>HCl + NaOH</p>
+        <p>Zn + HCl</p>
+        <p>AgNO3 + NaCl</p>
+        <p>CaCO3 + Heat</p>
+    </div>
+</section>
+{% endblock %}

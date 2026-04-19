@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero glass">
+    <div class="hero-text">
+        <span class="tag">Modern Chemistry Platform</span>
+        <h2>Learn chemistry with a futuristic digital lab experience.</h2>
+        <p>
+            This advanced version includes a full periodic table, formula finder,
+            molar mass calculator, and reaction checker in one modern web app.
+        </p>
+        <div class="hero-actions">
+            <a href="{{ url_for('periodic') }}" class="btn primary">Explore Periodic Table</a>
+            <a href="{{ url_for('tools') }}" class="btn secondary">Open Chemistry Tools</a>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+        <div class="hero-card glass">
+            <h3>Included Features</h3>
+            <ul>
+                <li>Full 118-element periodic table</li>
+                <li>Search by name, symbol, category</li>
+                <li>Formula finder</li>
+                <li>Molar mass calculator</li>
+                <li>Reaction checker</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="feature-grid">
+    <div class="glass card">
+        <h3>Periodic Table</h3>
+        <p>Browse all elements with atomic number, mass, category and grid position.</p>
+    </div>
+    <div class="glass card">
+        <h3>Formula Finder</h3>
+        <p>Search a compound name and get its chemical formula instantly.</p>
+    </div>
+    <div class="glass card">
+        <h3>Molar Mass Calculator</h3>
+        <p>Calculate molecular mass from a given formula with detailed breakdown.</p>
+    </div>
+    <div class="glass card">
+        <h3>Reaction Checker</h3>
+        <p>Test common chemistry reactions directly in the web interface.</p>
+    </div>
+</section>
+{% endblock %}

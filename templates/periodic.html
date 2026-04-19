@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="glass section-box">
+    <div class="section-header">
+        <h2>Full Periodic Table</h2>
+        <p>Search any element by symbol, name or category</p>
+    </div>
+
+    <input type="text" id="elementSearch" class="input" placeholder="Search element...">
+
+    <div id="legend" class="legend"></div>
+    <div class="periodic-shell">
+        <div id="periodicTable" class="periodic-table"></div>
+    </div>
+
+    <div class="glass info-panel" id="elementInfo">
+        <h3>Element Details</h3>
+        <p>Click any element to see its details here.</p>
+    </div>
+</section>
+
+<div id="elementModal" class="element-modal hidden">
+    <div class="element-modal-backdrop" onclick="closeElementModal()"></div>
+    <div class="element-modal-card">
+        <button type="button" class="element-modal-close" onclick="closeElementModal()">x</button>
+        <div id="elementModalContent"></div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="lab-hero">
+    <span class="section-kicker">SECTION 05-07</span>
+    <h2 class="lab-title">ChemLab Pro Tools</h2>
+    <p class="lab-subtitle">Use formula, pH, electrochemistry, and stoichiometry tools from one interactive dashboard.</p>
+</section>
+
+<div class="tools-tabbar">
+    <button type="button" class="tool-tab is-active" data-tool-tab="core" onclick="switchToolTab('core', this)">Core Tools</button>
+    <button type="button" class="tool-tab" data-tool-tab="ph" onclick="switchToolTab('ph', this)">pH</button>
+    <button type="button" class="tool-tab" data-tool-tab="electro" onclick="switchToolTab('electro', this)">Electrochemistry</button>
+    <button type="button" class="tool-tab" data-tool-tab="stoich" onclick="switchToolTab('stoich', this)">Stoichiometry</button>
+</div>
+
+<section class="tool-panel" data-tool-panel="core">
+    <div class="tool-grid">
+        <div class="glass section-box">
+            <div class="section-header">
+                <h2>Formula Finder</h2>
+                <p>Type compound name and get its formula</p>
+            </div>
+
+            <input type="text" id="compoundName" class="input" placeholder="Example: water">
+            <button class="btn primary full" onclick="findFormula()">Find Formula</button>
+
+            <div class="result-box" id="formulaResult">
+                <p>Result will appear here.</p>
+            </div>
+        </div>
+
+        <div class="glass section-box">
+            <div class="section-header">
+                <h2>Molar Mass Calculator</h2>
+                <p>Enter chemical formula and calculate molar mass</p>
+            </div>
+
+            <input type="text" id="formulaInput" class="input" placeholder="Example: H2SO4">
+            <button class="btn primary full" onclick="calculateMass()">Calculate</button>
+
+            <div class="result-box" id="massResult">
+                <p>Calculation result will appear here.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tool-panel hidden" data-tool-panel="ph">
+    <div class="section-header section-header-wide">
+        <span class="section-kicker">SECTION 05</span>
+        <h2>pH &amp; pOH Calculator</h2>
+        <p>Calculate pH, pOH, [H+], [OH-], and solution type from values or common substances.</p>
+    </div>
+
+    <div class="glass lab-card">
+        <div class="lab-form-grid ph-form-grid">
+            <label class="lab-field">
+                <span>Calculate from</span>
+                <select id="phMode" class="input input-dark" onchange="updatePhInputLabel()">
+                    <option value="ph">pH value</option>
+                    <option value="poh">pOH value</option>
+                    <option value="h">[H+] mol/L</option>
+                    <option value="oh">[OH-] mol/L</option>
+                </select>
+            </label>
+            <label class="lab-field">
+                <span id="phInputLabel">Enter pH value</span>
+                <input type="number" step="any" id="phValue" class="input input-dark" value="2.3" placeholder="Enter value">
+            </label>
+            <div class="lab-action">
+                <button class="btn btn-accent full" onclick="calculatePh()">Calculate</button>
+            </div>
+        </div>
+
+        <div class="ph-scale" id="phScale"></div>
+
+        <div class="ph-summary">
+            <div class="ph-reading" id="phReading">2.30</div>
+            <div>
+                <h3 id="phClassification">Strongly Acidic</h3>
+                <p id="phExample">Lemon juice</p>
+            </div>
+        </div>
+
+        <div class="metric-grid">
+            <div class="metric-card">
+                <span>pH</span>
+                <strong id="phResult">2.3000</strong>
+            </div>
+            <div class="metric-card">
+                <span>pOH</span>
+                <strong id="pohResult">11.7000</strong>
+            </div>
+            <div class="metric-card">
+                <span>[H+]</span>
+                <strong id="hResult">5.01 x 10^-3 mol/L</strong>
+            </div>
+            <div class="metric-card">
+                <span>[OH-]</span>
+                <strong id="ohResult">2.00 x 10^-12 mol/L</strong>
+            </div>
+            <div class="metric-card">
+                <span>pH + pOH</span>
+                <strong>= 14 (at 25 C)</strong>
+            </div>
+        </div>
+
+        <div class="common-substances">
+            <h3>Common substances</h3>
+            <div class="substance-chip-grid" id="commonSubstances"></div>
+        </div>
+    </div>
+</section>
+
+<section class="tool-panel hidden" data-tool-panel="electro">
+    <div class="section-header section-header-wide">
+        <span class="section-kicker">SECTION 06</span>
+        <h2>Standard Electrode Potentials</h2>
+        <p>Standard reduction potentials (E°) for common half-reactions. Higher E° means a stronger oxidising agent.</p>
+    </div>
+
+    <div class="electrode-grid" id="electrodeGrid"></div>
+</section>
+
+<section class="tool-panel hidden" data-tool-panel="stoich">
+    <div class="section-header section-header-wide">
+        <span class="section-kicker">SECTION 07</span>
+        <h2>Stoichiometry Calculator</h2>
+        <p>Select a balanced equation, enter a reactant mass, and get reactant usage plus predicted product masses.</p>
+    </div>
+
+    <div class="glass lab-card">
+        <div class="lab-form-grid">
+            <label class="lab-field lab-field-full">
+                <span>Select reaction</span>
+                <select id="stoichReaction" class="input input-dark" onchange="renderStoichReaction()"></select>
+            </label>
+        </div>
+
+        <div class="reaction-preview" id="stoichReactionPreview"></div>
+
+        <div class="lab-form-grid" id="stoichInputs"></div>
+
+        <button class="btn btn-accent" onclick="calculateStoichiometry()">Calculate Masses</button>
+
+        <div class="metric-grid" id="stoichResults"></div>
+    </div>
+</section>
+{% endblock %}

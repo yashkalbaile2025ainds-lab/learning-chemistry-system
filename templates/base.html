@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemLab Advanced</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="logo-box">
+                <div class="logo-circle">CL</div>
+                <div>
+                    <h2>ChemLab</h2>
+                    <p>Advanced Chemistry UI</p>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('periodic') }}">Periodic Table</a>
+                <a href="{{ url_for('tools') }}">Chemistry Tools</a>
+                <a href="{{ url_for('reactions') }}">Reaction Checker</a>
+            </nav>
+
+            <div class="side-note glass">
+                <h3>Smart Chemistry Project</h3>
+                <p>Built with Flask, HTML, CSS and JavaScript in a modern UI style.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="topbar">
+                <div>
+                    <h1>ChemLab Interactive</h1>
+                    <p>Explore elements, formulas, compounds and reactions</p>
+                </div>
+                <a href="{{ url_for('tools') }}" class="btn primary">Open Tools</a>
+            </header>
+
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

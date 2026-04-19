@@ -1,0 +1,41 @@
+title,tag,reaction,potential,note
+Bromine / Bromide,Oxidation agent,Br2 + 2e- -> 2Br-,1.07,Used in organic bromination and redox chemistry.
+Iodine / Iodide,Oxidation agent,I2 + 2e- -> 2I-,0.54,Used in iodometry titrations.
+Iron (III) / Iron (II),Oxidation agent,Fe3+ + e- -> Fe2+,0.77,Common redox couple in biological and industrial systems.
+Mercury (II) / Mercury,Oxidiser,Hg2+ + 2e- -> Hg,0.85,Used in electrochemical cells and sensors.
+Gold (III) / Gold,Strong oxidiser,Au3+ + 3e- -> Au,1.50,Highly noble metal with strong oxidising potential.
+Platinum (II) / Platinum,Oxidiser,Pt2+ + 2e- -> Pt,1.20,Used in catalytic and electrochemical systems.
+Hydrogen Peroxide (acidic),Oxidation agent,H2O2 + 2H+ + 2e- -> 2H2O,1.78,Acts as oxidiser in acidic medium.
+Hydrogen Peroxide (basic),Reducer,H2O2 + 2e- -> 2OH-,-0.88,Acts as reducing agent in basic medium.
+Ozone / Oxygen,Strong oxidiser,O3 + 2H+ + 2e- -> O2 + H2O,2.07,Used in water purification and oxidation reactions.
+Water / Hydrogen (basic),Reducer,2H2O + 2e- -> H2 + 2OH-,-0.83,Relevant in alkaline electrolysis.
+Zinc (II) / Zinc,Strong reducer,Zn2+ + 2e- -> Zn,-0.76,Used in galvanization and batteries.
+Aluminium / Aluminium ion,Strong reducer,Al3+ + 3e- -> Al,-1.66,Highly reactive metal used in extraction processes.
+Magnesium / Magnesium ion,Strong reducer,Mg2+ + 2e- -> Mg,-2.37,Used in sacrificial protection.
+Sodium / Sodium ion,Very strong reducer,Na+ + e- -> Na,-2.71,Highly reactive alkali metal.
+Potassium / Potassium ion,Very strong reducer,K+ + e- -> K,-2.93,Strongest common reducing metal.
+Calcium / Calcium ion,Strong reducer,Ca2+ + 2e- -> Ca,-2.87,Used in metallurgy and reduction processes.
+Lithium / Lithium ion,Strong reducer,Li+ + e- -> Li,-3.04,Important in lithium-ion batteries.
+Cadmium / Cadmium ion,Reducer,Cd2+ + 2e- -> Cd,-0.40,Used in rechargeable batteries.
+Tin (II) / Tin,Reducer,Sn2+ + 2e- -> Sn,-0.14,Used in plating and alloys.
+Iron (II) / Iron,Reducer,Fe2+ + 2e- -> Fe,-0.44,Important in corrosion and metallurgy.
+Chromium (III) / Chromium,Reducer,Cr3+ + 3e- -> Cr,-0.74,Used in electroplating.
+Manganese (II) / Manganese,Reducer,Mn2+ + 2e- -> Mn,-1.18,Used in alloys and batteries.
+Cobalt (II) / Cobalt,Reducer,Co2+ + 2e- -> Co,-0.28,Used in battery technology.
+Nickel (III) / Nickel (II),Oxidiser,Ni3+ + e- -> Ni2+,0.48,Important in advanced battery systems.
+Vanadium (V) / Vanadium (IV),Oxidiser,VO2+ + 2H+ + e- -> VO2+ + H2O,1.00,Used in vanadium redox batteries.
+Vanadium (IV) / Vanadium (III),Reducer,VO2+ + 2H+ + e- -> V3+ + H2O,0.34,Intermediate redox step in batteries.
+Sulfur / Sulfide,Reducer,S + 2e- -> S2-,-0.48,Occurs in sulfide chemistry.
+Thiosulfate / Tetrathionate,Reducer,2S2O3^2- -> S4O6^2- + 2e-,0.08,Used in iodometric titration.
+Nitric oxide / Nitrate,Oxidiser,NO3- + 4H+ + 3e- -> NO + 2H2O,0.96,Important in nitrogen cycle.
+Nitrogen / Ammonia,Reducer,N2 + 6H+ + 6e- -> 2NH3,-0.28,Haber process relevance.
+Carbon dioxide / Carbon,Reducer,CO2 + 4H+ + 4e- -> C + 2H2O,0.21,Relevant in electrochemical reduction.
+Carbon dioxide / Carbon monoxide,Reducer,CO2 + 2H+ + 2e- -> CO + H2O,-0.10,Industrial reduction process.
+Peroxide / Hydroxide,Reducer,O2 + H2O + 2e- -> HO2- + OH-,-0.07,Intermediate oxygen reduction.
+Hypochlorite / Chloride,Oxidiser,ClO- + H2O + 2e- -> Cl- + 2OH-,0.89,Used in bleaching and disinfection.
+Chlorate / Chloride,Strong oxidiser,ClO3- + 6H+ + 6e- -> Cl- + 3H2O,1.45,Strong oxidising agent.
+Perchlorate / Chloride,Strong oxidiser,ClO4- + 8H+ + 8e- -> Cl- + 4H2O,1.39,Very stable but strong oxidiser under conditions.
+Bromate / Bromide,Oxidiser,BrO3- + 6H+ + 6e- -> Br- + 3H2O,1.44,Used in analytical chemistry.
+Iodate / Iodide,Oxidiser,IO3- + 6H+ + 6e- -> I- + 3H2O,1.19,Used in iodometric analysis.
+Hydrogen / Hydride,Reducer,H2 + 2e- -> 2H-,-2.23,Occurs in metal hydrides.
+Fluoride / Fluorine,Reducer,2F- -> F2 + 2e-,-2.87,Reverse of strong oxidising reaction.

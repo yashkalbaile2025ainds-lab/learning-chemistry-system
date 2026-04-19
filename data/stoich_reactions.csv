@@ -1,0 +1,109 @@
+id,label,role,formula,coefficient
+water,2H2 + O2 -> 2H2O,reactant,H2,2
+water,2H2 + O2 -> 2H2O,reactant,O2,1
+water,2H2 + O2 -> 2H2O,product,H2O,2
+salt,HCl + NaOH -> NaCl + H2O,reactant,HCl,1
+salt,HCl + NaOH -> NaCl + H2O,reactant,NaOH,1
+salt,HCl + NaOH -> NaCl + H2O,product,NaCl,1
+salt,HCl + NaOH -> NaCl + H2O,product,H2O,1
+combustion,CH4 + 2O2 -> CO2 + 2H2O,reactant,CH4,1
+combustion,CH4 + 2O2 -> CO2 + 2H2O,reactant,O2,2
+combustion,CH4 + 2O2 -> CO2 + 2H2O,product,CO2,1
+combustion,CH4 + 2O2 -> CO2 + 2H2O,product,H2O,2
+precipitation,AgNO3 + NaCl -> AgCl + NaNO3,reactant,AgNO3,1
+precipitation,AgNO3 + NaCl -> AgCl + NaNO3,reactant,NaCl,1
+precipitation,AgNO3 + NaCl -> AgCl + NaNO3,product,AgCl,1
+precipitation,AgNO3 + NaCl -> AgCl + NaNO3,product,NaNO3,1
+decomposition,CaCO3 -> CaO + CO2,reactant,CaCO3,1
+decomposition,CaCO3 -> CaO + CO2,product,CaO,1
+decomposition,CaCO3 -> CaO + CO2,product,CO2,1
+displacement,Zn + 2HCl -> ZnCl2 + H2,reactant,Zn,1
+displacement,Zn + 2HCl -> ZnCl2 + H2,reactant,HCl,2
+displacement,Zn + 2HCl -> ZnCl2 + H2,product,ZnCl2,1
+displacement,Zn + 2HCl -> ZnCl2 + H2,product,H2,1
+neutralization,H2SO4 + 2NaOH -> Na2SO4 + 2H2O,reactant,H2SO4,1
+neutralization,H2SO4 + 2NaOH -> Na2SO4 + 2H2O,reactant,NaOH,2
+neutralization,H2SO4 + 2NaOH -> Na2SO4 + 2H2O,product,Na2SO4,1
+neutralization,H2SO4 + 2NaOH -> Na2SO4 + 2H2O,product,H2O,2
+synthesis,N2 + 3H2 -> 2NH3,reactant,N2,1
+synthesis,N2 + 3H2 -> 2NH3,reactant,H2,3
+synthesis,N2 + 3H2 -> 2NH3,product,NH3,2
+decomposition,2KClO3 -> 2KCl + 3O2,reactant,KClO3,2
+decomposition,2KClO3 -> 2KCl + 3O2,product,KCl,2
+decomposition,2KClO3 -> 2KCl + 3O2,product,O2,3
+precipitation,BaCl2 + Na2SO4 -> BaSO4 + 2NaCl,reactant,BaCl2,1
+precipitation,BaCl2 + Na2SO4 -> BaSO4 + 2NaCl,reactant,Na2SO4,1
+precipitation,BaCl2 + Na2SO4 -> BaSO4 + 2NaCl,product,BaSO4,1
+precipitation,BaCl2 + Na2SO4 -> BaSO4 + 2NaCl,product,NaCl,2
+precipitation,Pb(NO3)2 + 2KI -> PbI2 + 2KNO3,reactant,Pb(NO3)2,1
+precipitation,Pb(NO3)2 + 2KI -> PbI2 + 2KNO3,reactant,KI,2
+precipitation,Pb(NO3)2 + 2KI -> PbI2 + 2KNO3,product,PbI2,1
+precipitation,Pb(NO3)2 + 2KI -> PbI2 + 2KNO3,product,KNO3,2
+gas_evolution,Na2CO3 + 2HCl -> 2NaCl + H2O + CO2,reactant,Na2CO3,1
+gas_evolution,Na2CO3 + 2HCl -> 2NaCl + H2O + CO2,reactant,HCl,2
+gas_evolution,Na2CO3 + 2HCl -> 2NaCl + H2O + CO2,product,NaCl,2
+gas_evolution,Na2CO3 + 2HCl -> 2NaCl + H2O + CO2,product,H2O,1
+gas_evolution,Na2CO3 + 2HCl -> 2NaCl + H2O + CO2,product,CO2,1
+
+gas_evolution,CaCO3 + 2HCl -> CaCl2 + H2O + CO2,reactant,CaCO3,1
+gas_evolution,CaCO3 + 2HCl -> CaCl2 + H2O + CO2,reactant,HCl,2
+gas_evolution,CaCO3 + 2HCl -> CaCl2 + H2O + CO2,product,CaCl2,1
+gas_evolution,CaCO3 + 2HCl -> CaCl2 + H2O + CO2,product,H2O,1
+gas_evolution,CaCO3 + 2HCl -> CaCl2 + H2O + CO2,product,CO2,1
+
+combustion,C2H6 + 7O2 -> 4CO2 + 6H2O,reactant,C2H6,2
+combustion,C2H6 + 7O2 -> 4CO2 + 6H2O,reactant,O2,7
+combustion,C2H6 + 7O2 -> 4CO2 + 6H2O,product,CO2,4
+combustion,C2H6 + 7O2 -> 4CO2 + 6H2O,product,H2O,6
+
+combustion,C3H8 + 5O2 -> 3CO2 + 4H2O,reactant,C3H8,1
+combustion,C3H8 + 5O2 -> 3CO2 + 4H2O,reactant,O2,5
+combustion,C3H8 + 5O2 -> 3CO2 + 4H2O,product,CO2,3
+combustion,C3H8 + 5O2 -> 3CO2 + 4H2O,product,H2O,4
+
+decomposition,2H2O2 -> 2H2O + O2,reactant,H2O2,2
+decomposition,2H2O2 -> 2H2O + O2,product,H2O,2
+decomposition,2H2O2 -> 2H2O + O2,product,O2,1
+
+displacement,Fe + CuSO4 -> FeSO4 + Cu,reactant,Fe,1
+displacement,Fe + CuSO4 -> FeSO4 + Cu,reactant,CuSO4,1
+displacement,Fe + CuSO4 -> FeSO4 + Cu,product,FeSO4,1
+displacement,Fe + CuSO4 -> FeSO4 + Cu,product,Cu,1
+
+displacement,Cu + 2AgNO3 -> Cu(NO3)2 + 2Ag,reactant,Cu,1
+displacement,Cu + 2AgNO3 -> Cu(NO3)2 + 2Ag,reactant,AgNO3,2
+displacement,Cu + 2AgNO3 -> Cu(NO3)2 + 2Ag,product,Cu(NO3)2,1
+displacement,Cu + 2AgNO3 -> Cu(NO3)2 + 2Ag,product,Ag,2
+
+displacement,Cl2 + 2KI -> 2KCl + I2,reactant,Cl2,1
+displacement,Cl2 + 2KI -> 2KCl + I2,reactant,KI,2
+displacement,Cl2 + 2KI -> 2KCl + I2,product,KCl,2
+displacement,Cl2 + 2KI -> 2KCl + I2,product,I2,1
+
+oxide_reaction,CaO + H2O -> Ca(OH)2,reactant,CaO,1
+oxide_reaction,CaO + H2O -> Ca(OH)2,reactant,H2O,1
+oxide_reaction,CaO + H2O -> Ca(OH)2,product,Ca(OH)2,1
+
+acid_base,NH3 + HCl -> NH4Cl,reactant,NH3,1
+acid_base,NH3 + HCl -> NH4Cl,reactant,HCl,1
+acid_base,NH3 + HCl -> NH4Cl,product,NH4Cl,1
+
+metal_water,2Na + 2H2O -> 2NaOH + H2,reactant,Na,2
+metal_water,2Na + 2H2O -> 2NaOH + H2,reactant,H2O,2
+metal_water,2Na + 2H2O -> 2NaOH + H2,product,NaOH,2
+metal_water,2Na + 2H2O -> 2NaOH + H2,product,H2,1
+
+metal_water,Ca + 2H2O -> Ca(OH)2 + H2,reactant,Ca,1
+metal_water,Ca + 2H2O -> Ca(OH)2 + H2,reactant,H2O,2
+metal_water,Ca + 2H2O -> Ca(OH)2 + H2,product,Ca(OH)2,1
+metal_water,Ca + 2H2O -> Ca(OH)2 + H2,product,H2,1
+
+neutralization,HNO3 + KOH -> KNO3 + H2O,reactant,HNO3,1
+neutralization,HNO3 + KOH -> KNO3 + H2O,reactant,KOH,1
+neutralization,HNO3 + KOH -> KNO3 + H2O,product,KNO3,1
+neutralization,HNO3 + KOH -> KNO3 + H2O,product,H2O,1
+
+neutralization,CH3COOH + NaOH -> CH3COONa + H2O,reactant,CH3COOH,1
+neutralization,CH3COOH + NaOH -> CH3COONa + H2O,reactant,NaOH,1
+neutralization,CH3COOH + NaOH -> CH3COONa + H2O,product,CH3COONa,1
+neutralization,CH3COOH + NaOH -> CH3COONa + H2O,product,H2O,1
